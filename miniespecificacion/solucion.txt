@@ -2,7 +2,7 @@
 2 funcion principal()
 3   bandera, boolean <-- true
 4   salida, x(5)[{a-z}, {A-Z}, {BS}]
-5   contador, i[0-n]
+5   contador, i[0-n] <-- 0
 6   cuenta, i[0-8]
 
 7   Mientras bandera == true entonces 
@@ -16,6 +16,7 @@
 9   >> cuenta
 10  Si cuenta == 1 entonces
 11	crearFacebook()
+12      contador <-- contador + 1
 12  De lo contrario
 13	Si cuenta == 2 entonces
 14	   crearTwitter()
